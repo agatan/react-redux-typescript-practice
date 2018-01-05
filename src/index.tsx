@@ -1,16 +1,16 @@
 import * as React from 'react';
 import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-interface HelloProps {
-    compiler: string;
-    framework: string;
-}
+import todos from './reducers/todos';
+import App from './App';
 
-const Hello = ({ compiler, framework }: HelloProps) => (
-    <h1>Hello from {compiler} and {framework}</h1>
-);
+const store = createStore(todos);
 
 render(
-    <Hello compiler="TypeScript" framework="React" />,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root'),
 );
