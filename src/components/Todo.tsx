@@ -12,9 +12,9 @@ export default class Todo extends React.PureComponent<TodoProps, {}> {
     return (
       <li
         onClick={onClick}
-        style={{ textDecoration: completed ? 'line-through' : 'none' }}
       >
         {text}
+        {completed ? ' [Done]' : null}
       </li>
     );
   }
