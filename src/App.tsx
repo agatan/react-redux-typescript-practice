@@ -1,5 +1,5 @@
 import * as React from 'react';
-import TodoList from './containers/TodoList';
+import VisibleTodoList from './containers/VisibleTodoList';
 import AddTodoButton from './containers/AddTodoButton';
 import Footer from './components/Footer';
 
@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <AddTodoButton />
-      <TodoList />
+      <VisibleTodoList />
       <Footer />
     </div>
   );
