@@ -13,7 +13,7 @@ export default function Link({ active, children, onClick }: LinkProps) {
     return (
         <a
             href=""
-            onClick={e =>{
+            onClick={e => {
                 e.preventDefault();
                 onClick();
             }}

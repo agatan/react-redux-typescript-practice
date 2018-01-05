@@ -6,9 +6,9 @@ import { TodoActionType } from '../actions/index';
 
 enzyme.configure({ adapter: new Adapter() });
 
-it("adds a new TODO when ADD_TODO action is reached", () => {
+it('adds a new TODO when ADD_TODO action is reached', () => {
     const base = [
-        { id: 0, text: "Hello", completed: false },
+        { id: 0, text: 'Hello', completed: false },
     ];
     const nextState = todos(base, {
         type: TodoActionType.ADD_TODO,

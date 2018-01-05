@@ -12,7 +12,7 @@ function mapDispatchToProps(dispatch: Dispatch<TodoAction>) {
         onSubmit: (s: string) => {
             dispatch(addTodo(s));
         }
-    }
+    };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddTodoButton);

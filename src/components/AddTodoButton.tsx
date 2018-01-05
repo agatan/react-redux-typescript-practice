@@ -34,7 +34,7 @@ export default class AddTodoButton extends React.Component<AddTodoButtonProps, {
             <div>
                 <form onSubmit={this.onFormSubmit}>
                     <input type="text" value={this.state.input} onChange={this.onInputChange}/>
-                    <button type='submit'>Add Todo</button>
+                    <button type="submit">Add Todo</button>
                 </form>
             </div>
         );
