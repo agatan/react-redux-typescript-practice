@@ -7,7 +7,7 @@ import * as Adapter from 'enzyme-adapter-react-16';
 
 enzyme.configure({ adapter: new Adapter() });
 
-it("renders text when completed=true", () => {
+it("renders 2 todos", () => {
     const dummyCb = (id: number) => { return; };
     const todos = [
         { id: 0, text: "Hello", completed: true },
