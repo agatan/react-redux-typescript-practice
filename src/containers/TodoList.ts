@@ -1,11 +1,11 @@
 import { connect, Dispatch } from 'react-redux';
 import { toggleTodo, TodoAction } from '../actions/index';
 import TodoList from '../components/TodoList';
-import { Todos } from '../states/TodoState';
+import { RootState } from '../states/index';
 
-function mapStateToProps(state: Todos) {
+function mapStateToProps(state: RootState) {
   return {
-    todos: state,
+    todos: state.todos,
   };
 }
 
