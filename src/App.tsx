@@ -4,11 +4,11 @@ import AddTodoButton from './containers/AddTodoButton';
 import Footer from './components/Footer';
 
 export default function App() {
-  return (
-    <div>
-      <AddTodoButton />
-      <VisibleTodoList />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <AddTodoButton />
+            <VisibleTodoList />
+            <Footer />
+        </div>
+    );
 }

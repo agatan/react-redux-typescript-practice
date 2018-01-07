@@ -1,9 +1,9 @@
 export enum VisibilityFilter {
-  ShowAll,
-  ShowActive,
-  ShowCompleted,
+    ShowAll,
+    ShowActive,
+    ShowCompleted,
 }
 
 export default interface VisibilityState {
-  filter: VisibilityFilter;
-}
+    filter: VisibilityFilter;
+};
