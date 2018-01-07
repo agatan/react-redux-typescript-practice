@@ -9,7 +9,8 @@
     "bundle": "webpack",
     "clean": "rm -r ./dist && mkdir dist",
     "build": "npm run clean && npm run lint && npm run bundle",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "format": "prettier --config .prettierrc.json --write \"./src/**/*.{js,jsx,ts,tsx}\""
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.6",
@@ -23,6 +24,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
+    "prettier": "1.9.2",
     "source-map-loader": "^0.2.3",
     "ts-jest": "^22.0.0",
     "tslint": "^5.8.0",
